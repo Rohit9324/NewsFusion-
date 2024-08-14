@@ -1,1 +1,1 @@
-NewsFusion is a News Aggregator website made using HTML, CSS and JavaScript with light/dark mode feature . This website collects news from various topics such as sports , finanac etc and displays on single web page. Users also have the option to search for the news feed they want
+NewsFusion is a News Aggregator website made using HTML, CSS and JavaScript with light/dark mode feature . This website collects news from various topics such as sports , finanace etc an displays on single web page. Users also have the option to search for the news for their interested topics.
