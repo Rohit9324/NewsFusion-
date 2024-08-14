@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="darkmode"> <!--darkmode -->
+    <div>
+    <nav class="navbar">
+        <div class="main-nav container flex">
+
+            <div class="heading">
+                <h1 onclick="reload()">News<span>Fusion</span></h1>
+            </div>
+
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology
+                    </li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                </ul>
+            </div>
+
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="Search">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+
+            <div class="dark-mode">
+                <button id="theme-switch">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                </button>
+            </div>
+    </nav>
+    </div>
+    <main>
+        <div class="cards-container container flex darkmode" id="cards-container">
+
+        </div>
+
+        <template id="template-news-card">
+            <div class="card darkmode ">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title" class="news-title">Title</h3>
+                    <h6 id="news-source" class="news-source">Magazine 12 August 2024</h6>
+                    <p id="news-desc" class="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Voluptates delectus deleniti pariatur
+                        aliquam mollitia tempore sint quos est harum, consequatur itaque facilis atque minus iure
+                        aspernatur. Vitae quis aut tempora!</p>
+                </div>
+            </div>
+        </template>
+    </main>
+    <script src="script.js"></script>
+    <script src="darkmode.js" defer></script>
+</body>
+
+</html>
